@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../plantuml/maps"
+		},
+		{
+			"path": "../notes"
+		}
+	],
+	"settings": {}
+}
