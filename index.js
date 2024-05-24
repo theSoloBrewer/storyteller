@@ -2,7 +2,7 @@
 import Character from './models/character.js';
 import { Event } from "./models/utils.js"; */
 
-import fs from 'fs';
+/* import fs from 'fs';
 import path from 'path';
 
 const importedModules = [];
@@ -43,7 +43,7 @@ await importFilesRecursively(modulesDir)
 
 
 
-console.log(importedModules)
+console.log(importedModules) */
 
 
 /* mongoose.connect("mongodb://127.0.0.1:27017/storyteller");

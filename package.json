@@ -12,6 +12,10 @@
   "author": "",
   "license": "ISC",
   "description": "",
+  "engines": {
+    "npm": ">=10.0.0",
+    "node": ">=20.0.0"
+  },
   "dependencies": {
     "@angular/cli": "^17.3.7",
     "express": "^4.19.2",
