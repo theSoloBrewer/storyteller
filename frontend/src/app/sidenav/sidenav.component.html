@@ -1,0 +1,18 @@
+<mat-drawer-container class="example-container">
+  <mat-drawer opened mode="side" class="sidebar">
+    <mat-nav-list>
+      <mat-form-field class="navSearch">
+        <mat-label>Search</mat-label>
+        <input matInput placeholder="Search" class="form-control">
+      </mat-form-field>
+      <a mat-list-item routerLink="." class="text-light">About</a>
+      <a mat-list-item routerLink=".">Services</a>
+      <a mat-list-item routerLink=".">Clients</a>
+      <a mat-list-item routerLink=".">Contact</a>
+    </mat-nav-list>
+  </mat-drawer>
+    <div class="content">
+      <router-outlet />
+    </div>
+
+</mat-drawer-container>

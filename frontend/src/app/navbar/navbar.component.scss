@@ -1,0 +1,48 @@
+/* Add a black background color to the top navigation */
+@use '@angular/material' as mat;
+// @use "../../m3-theme.scss" as my-theme;
+
+// .example-spacer {
+//   flex: 1 1 auto;
+// }
+// mat-toolbar {
+//   flex-direction: row;
+//   background-color: rgba(mat.get-theme-color(my-theme.$light-theme, tertiary), 1);
+//   justify-content: flex-end;
+//   overflow: hidden;
+//   button {
+//     float: left;
+//     // color: #f2f2f2;
+//     text-align: center;
+//     // padding: 14px 16px;
+//     line-height: initial;
+//     text-decoration: none;
+//     font-size: 17px;
+//     font-family: Roboto, "Helvetica Neue", sans-serif;
+//   }
+//   mat-icon {
+//     margin-right: 0;
+//   }
+// }
+
+@media screen and (max-width:400px){
+  .navbar {
+    flex: none;
+  }
+}
+
+
+// /* Style the links inside the navigation bar */
+
+
+// /* Change the color of links on hover */
+// .navbar a:hover {
+//   background-color: #ddd;
+//   color: black;
+// }
+
+// /* Add a color to the active/current link */
+// .navbar a.active {
+//   background-color: #04AA6D;
+//   color: white;
+// }

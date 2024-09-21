@@ -1,0 +1,3 @@
+@for (vehicle of vehicleModel; track vehicle) {
+  <a [routerLink]="'edit/'+[(vehicle._id)]">{{ vehicle.title }}</a><br />
+}

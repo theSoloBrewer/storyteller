@@ -1,0 +1,27 @@
+<mat-toolbar color="primary" class="navbar">
+  <span class="logo" style="font-family: Alex Brush; font-size: 48px ;">
+    Storyteller
+  </span>  <span class="example-spacer"></span>
+  @for (item of menuItems; track item) {
+    <button mat-button class="d-none d-md-block">
+      <mat-icon class="mr">{{item.icon}}</mat-icon>
+      {{item.label}}
+    </button>
+  }
+    <button mat-button class="d-none d-md-block mat-accent" color="secondary">
+      <mat-icon class="mr">login</mat-icon>
+      Login/Sign-up
+    </button>
+  <button mat-icon-button [matMenuTriggerFor]="menu" class="d-block d-sm-none">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    @for(item of menuItems; track item){
+      <button mat-menu mat-menu-item>
+        <mat-icon class="mr">{{item.icon}}</mat-icon>
+      {{item.label}}
+      </button>
+    }
+  </mat-menu>
+
+</mat-toolbar>
