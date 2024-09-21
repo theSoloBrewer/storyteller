@@ -17,7 +17,7 @@
     "node": ">=20.0.0"
   },
   "dependencies": {
-    "@angular/cli": "^17.3.7",
+    "@angular/cli": "^18.2.5",
     "express": "^4.19.2",
     "mongoose": "^8.4.0"
   },
