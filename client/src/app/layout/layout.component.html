@@ -1,0 +1,51 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+      <div class="menu-title">
+        <H1 class="mat-menu-item" color="primary">Storyteller</H1>
+      </div>
+    <mat-nav-list>
+      @for (item of rootRoutes; track $index) {
+          <a
+              mat-list-item
+              [routerLink]="item.path"
+              #link="routerLinkActive"
+              routerLinkActive
+              [activated]="link.isActive"
+          >
+              {{ item.title }}
+          </a>
+      }
+  </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar class="mat-primary" color="primary">
+      @if (isHandset$ | async) {
+        <button
+          style="float: left;"
+          type="button"
+          aria-label="Toggle sidenav"
+          mat-icon-button
+          (click)="drawer.toggle()">
+          <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        </button>
+      }
+        <div class="link-group">
+          <span class="example-spacer"></span>
+          <button mat-button>client</button>
+          <button mat-flat-button class="d-none d-md-block" color="secondary">
+            <mat-icon class="mr">login</mat-icon>
+            Login/Sign-up
+          </button>
+        </div>
+    </mat-toolbar>
+    <!-- Add Content Here -->
+    <div class="sidenav-scroll-wrapper">
+      <div class="sidenav-content">
+        <ng-content></ng-content>
+      </div>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

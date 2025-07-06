@@ -19,7 +19,8 @@
   "dependencies": {
     "@angular/cli": "^18.2.5",
     "express": "^4.19.2",
-    "mongoose": "^8.4.0"
+    "mongoose": "^8.4.0",
+    "storyteller": "file:"
   },
   "devDependencies": {
     "@eslint/js": "^9.3.0",
